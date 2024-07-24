@@ -39,6 +39,8 @@ export const BackgroundGradientAnimation = ({
   const [curY, setCurY] = useState(0);
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
+
+  // Effect for setting CSS variables
   useEffect(() => {
     document.body.style.setProperty(
       "--gradient-background-start",
@@ -56,22 +58,40 @@ export const BackgroundGradientAnimation = ({
     document.body.style.setProperty("--pointer-color", pointerColor);
     document.body.style.setProperty("--size", size);
     document.body.style.setProperty("--blending-value", blendingValue);
-  }, []);
+  }, [
+    gradientBackgroundStart,
+    gradientBackgroundEnd,
+    firstColor,
+    secondColor,
+    thirdColor,
+    fourthColor,
+    fifthColor,
+    pointerColor,
+    size,
+    blendingValue,
+  ]);
 
+  // Effect for handling interactive movement
   useEffect(() => {
     function move() {
       if (!interactiveRef.current) {
         return;
       }
-      setCurX(curX + (tgX - curX) / 20);
-      setCurY(curY + (tgY - curY) / 20);
+      setCurX((curX) => curX + (tgX - curX) / 20);
+      setCurY((curY) => curY + (tgY - curY) / 20);
       interactiveRef.current.style.transform = `translate(${Math.round(
         curX
       )}px, ${Math.round(curY)}px)`;
     }
 
     move();
-  }, [tgX, tgY]);
+  }, [curX, curY, tgX, tgY]);
+
+  // Effect for detecting Safari browser
+  const [isSafari, setIsSafari] = useState(false);
+  useEffect(() => {
+    setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
+  }, []);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (interactiveRef.current) {
@@ -80,11 +100,6 @@ export const BackgroundGradientAnimation = ({
       setTgY(event.clientY - rect.top);
     }
   };
-
-  const [isSafari, setIsSafari] = useState(false);
-  useEffect(() => {
-    setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
-  }, []);
 
   return (
     <div
