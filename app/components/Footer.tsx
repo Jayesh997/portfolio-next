@@ -18,7 +18,7 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[65vw] mb-10">
-          Let's connect and discuss how we can{" "}
+          Let&apos;s connect and discuss how we can{" "}
           <span className="text-purple">bring your dream website to life.</span>
         </h1>
         {/* <p className="text-white-200 md:mt-10 my-5 text-center">
