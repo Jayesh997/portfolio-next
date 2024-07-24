@@ -33,9 +33,27 @@ const Footer = () => {
           />
         </a>
         <div className="flex gap-10 pt-10">
-          <FaLinkedin size={30} color="#ffffff" />
-          <FaGithubSquare size={30} color="#ffffff" />
-          <FaInstagramSquare size={30} color="#ffffff" />
+          <a
+            href="https://www.linkedin.com/in/jayesh-gupta-b84619217/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin size={30} color="#ffffff" />
+          </a>
+          <a
+            href="https://github.com/Jayesh997"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithubSquare size={30} color="#ffffff" />
+          </a>
+          <a
+            href="https://www.instagram.com/jayyy_walkerrr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagramSquare size={30} color="#ffffff" />
+          </a>
         </div>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-center items-center">
