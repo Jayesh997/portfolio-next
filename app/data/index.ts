@@ -110,33 +110,21 @@ export const navItems = [
     {
       quote:
         "Collaborating with Jayesh was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Jayesh's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Jayesh is the ideal partner.",
-      name: "Michael Johnso",
-      title: "Director of AlphaStream Technologies",
+      name: "Shobhit Gupta",
+      title: "Managing Director of Cherish Journeys Pvt. Ltd.",
     },
     {
       quote:
-        "Collaborating with Jayesh was an absolute pleasure. His professionalism, promptness, er.",
-      name: "Michael Johns",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Jayesh was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Jayesh's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Jayesh is the ideal partner.",
-      name: "Michael John",
-      title: "Director of AlphaStream Technologies",
+        "I had the pleasure of working with Jayesh Gupta for over a year, and during this time, I was impressed by his deep understanding of JavaScript and ReactJS. Jayesh's ability to analyze complex problems and develop effective solutions is commendable. He consistently demonstrates strong team compatibility, always ensuring open communication and collaboration. Jayesh is an asset to any team.",
+      name: "Rahul Yadav",
+      title: "SDE-II, Desynova Pvt. Ltd.",
     },
     {
       quote:
         "Collaborating with Jayesh was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Jayesh's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Jayesh is the ideal partner.",
-      name: "Michael Joh",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Jayesh was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Jayesh's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Jayesh is the ideal partner.",
-      name: "Michael Jo",
-      title: "Director of AlphaStream Technologies",
-    },
+      name: "Shubham Talan",
+      title: "SDE-II, Cimpress Pvt. Ltd.",
+    }
   ];
   
   export const workExperience = [
